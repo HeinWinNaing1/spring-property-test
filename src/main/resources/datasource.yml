@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: second
+oracle:
+  user: ymluser
+  password: yml1234
+  url:  ymlurl
+  
+aws:
+  cloud:
+    service: ymlservice
+    authentication: ymlauthentication
+    cached: ymlcached
+    
+servers: jboss,tomcat,redhat,centos,glassfish
+
+---
+spring:
+  config:
+    activate:
+      on-profile: second
+oracle:
+  user: ymluserSecond
+  password: yml1234Second
+  url:  ymlurlSecond
+  
+aws:
+  cloud:
+    service: ymlserviceSecond
+    authentication: ymlauthenticationSecond
+    cached: ymlcachedSecond
+    
+servers: jboss,tomcat,redhat,centos,glassfishSecond
